@@ -1,5 +1,5 @@
 html {
-  font-size: calc(100vw / 1440 * 16); /* Escala todo en proporción al ancho base */
+  font-size: calc(100vw / 1440 * 16); 
 }
 
 body {
@@ -7,11 +7,12 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
+  background-color: #011627;
   background-image: url('../img/background.png');
-  background-size: 100% auto; /* Ocupa todo el ancho, mantiene proporciones */
-  background-position: top center; /* Inicia desde la parte superior */
+  background-size: 100% auto; 
+  background-position: top center; 
   background-repeat: no-repeat;
-  overflow-x: hidden; /* Evita líneas blancas horizontales */
+  overflow-x: hidden; 
 }
 
 
@@ -824,6 +825,11 @@ section {
   margin-top: 40px;
 }
 
+
+
+
+
+
 .section-logo {
   display: flex;
   flex-direction: column;
@@ -840,6 +846,9 @@ section {
   align-items: center;
   margin-top: 5%;
 }
+
+
+
 
 .section7-contenido{
   display: flex;
@@ -958,6 +967,8 @@ section {
   max-width: 800px;
 }
 
+
+
 .section-productos {
   display: flex;
   justify-content: center;
@@ -979,6 +990,8 @@ section {
   border-radius: 12px;
   /* opcional */
 }
+
+
 
 
 
@@ -1038,6 +1051,8 @@ section {
     font-size: 14px;
   }
 }
+
+
 
 
 .section9 {
@@ -1235,7 +1250,7 @@ footer {
   }
 }
 
-/* Escala el contenido según el ancho del viewport */
+
 @media screen and (min-width: 1440px) {
   .page-container {
     transform: scale(calc(100vw / 1440));
@@ -1651,32 +1666,32 @@ footer {
 
 
 
-
 /* RESPONSIVE CELULARES PARA NOSOTROS TARJETA */
 @media screen and (max-width: 767px) {
   .nosotros-tarjeta {
     display: flex;
-    flex-direction: column; /* apilar imagen y contenido */
+    flex-direction: column;
     align-items: flex-start;
-    margin-top: 40px; /* distancia desde sección anterior */
-    padding: 0 16px; /* margen lateral */
+    margin-top: 40px; /* distancia desde la sección anterior */
+    padding: 0 16px;
     gap: 16px;
   }
 
   /* Imagen arriba */
   .tarjeta-imagen {
+    order: -1; /* hace que la imagen suba arriba */
     width: 100%;
     margin-bottom: 16px;
-    overflow: hidden; /* recorta si excede */
+    overflow: hidden;
     position: relative;
   }
 
   .tarjeta-imagen img {
-    width: 120%; /* permite recorte desde la izquierda */
+    width: 120%;
     height: auto;
     object-fit: cover;
     position: relative;
-    left: -20%; /* recorte hacia la izquierda */
+    left: -20%;
   }
 
   /* Contenido debajo de la imagen */
@@ -1688,51 +1703,439 @@ footer {
     margin-bottom: 16px;
   }
 
-
-  .nosotros-tarjeta3 .azul{
+  .nosotros-tarjeta3 .azul {
     font-size: 40px;
   }
 
-  .nosotros-tarjeta3 .verde{
+  .nosotros-tarjeta3 .verde {
     font-size: 40px;
-
   }
 
-  .nosotros-tarjeta3 .blanco-y{
+  .nosotros-tarjeta3 .blanco-y {
     font-size: 24px;
   }
 
-  .blanco-coma{
+  .blanco-coma {
     font-size: 28px;
   }
 
-  .blanco-signo{
+  .blanco-signo {
     font-size: 40px;
   }
 
-  /* Descripción */
   .nosotros-tarjeta3 .nosotros-descripcion {
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 24px;
-    word-break: break-word; /* evita que el texto se corte */
+    word-break: break-word;
   }
 
-  /* Lista */
   .nosotros-lista {
     font-size: 14px;
     margin-bottom: 24px;
   }
 
-  /* Botón debajo */
- 
-  .boton-tarjeta{
+  .boton-tarjeta {
     display: block;
   }
 
   .boton-tarjeta img {
     width: 100%;
     height: auto;
-    max-width: 100%; 
+    max-width: 100%;
+  }
 }
+
+
+
+/* SECTION LOGO */
+@media screen and (max-width: 767px) {
+  .section-logo {
+    padding: 60px 16px 80px 16px; 
+  }
+
+
+  .section-logo-img {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .section-logo-img img {
+    width: 100%; 
+    height: auto;
+    margin-top: 0;
+  }
+
+
+  .logo-frase h1 {
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .blanco-y {
+    font-size: 28px;
+  }
+
+  .verde {
+    font-size: 40px;
+  }
+
+  .blanco-signo {
+    font-size: 40px;
+  }
+
+  .logo-descripcion {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 8px;
+  }
+}
+
+
+
+/* SECTION PRODUCTOS */
+@media screen and (max-width: 767px) {
+  .section-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 16px 80px 16px; 
+  }
+
+  .section-productos-img {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 74px; 
+    width: 100%;
+  }
+
+  .section-productos-img img {
+    width: 100%; 
+    max-width: 350px; 
+    height: auto;
+    border-radius: 16px;
+  }
+}
+
+
+
+
+/* SECTION 6 */
+@media screen and (max-width: 767px) {
+  .section6 {
+    margin-top: 93px; 
+    padding: 0 16px;
+  }
+
+  .section6-img {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .section6-img img {
+    width: 100%; 
+    max-width: 380px;
+    height: auto;
+  }
+
+  #quieroSerparte {
+    position: relative; 
+    margin-top: 32px; 
+    width: 100%;
+    max-width: 280px;
+    height: 47px;
+  }
+}
+
+
+
+
+/* SECTION 7 */
+@media screen and (max-width: 767px) {
+  .section7 {
+    margin-top: 40px; 
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Contenido arriba */
+  .section7-contenido {
+    order: 1;
+    margin: 0;
+    text-align: center;
+  }
+
+  .section7-contenido h1 {
+    line-height: 1.2;
+  }
+
+  .section7-contenido .blanco-y {
+    font-size: 28px;
+  }
+
+  .section7-contenido .azul-cuenta {
+    font-size: 40px;
+  }
+
+  .section7-contenido .verde {
+    font-size: 40px;
+  }
+
+  .section7-contenido .blanco-signo {
+    font-size: 40px;
+  }
+
+  /* Imágenes abajo */
+  .section7-img {
+    order: 2;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    gap: 24px; 
+  }
+
+  .section7-img .img-chat {
+    width: 85%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .section7-img img:last-child {
+    width: 80%;
+    max-width: 320px;
+    height: auto;
+  }
+}
+
+
+
+
+/* --- SECTION 8 BASE --- */
+.section8 {
+  width: 100%;
+  background: var(--Gradient-Primary, 
+    linear-gradient(180deg, 
+      var(--Color-Palette-Primary-400, #3689D1) 0%, 
+      var(--Color-Palette-Primary-500, #036CC5) 50%, 
+      var(--Color-Palette-Primary-600, #01569E) 100%)
+  );
+  padding: 24px 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.section8-texto {
+  max-width: 1000px;
+}
+
+.section8-texto span {
+  color: var(--Color-Palette-Basic-White, #FFF);
+  text-shadow: 0 5px 6px rgba(0, 0, 0, 0.45);
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0.8px;
+}
+
+.section8-texto p {
+  color: var(--Color-Palette-Basic-White, #FFF);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: -0.8px;
+  margin-top: 16px;
+}
+
+/* --- RESPONSIVE CELULARES --- */
+@media screen and (max-width: 767px) {
+  .section8 {
+    width: 100%;
+    padding: 40px 24px; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left; 
+  }
+
+  .section8-texto {
+    max-width: 100%;
+  }
+
+  .section8-texto span {
+    font-size: 28px; /* tamaño pedido */
+    line-height: 130%;
+  }
+
+  .section8-texto p {
+    font-size: 14px; /* tamaño pedido */
+    line-height: 150%;
+    margin-top: 12px;
+  }
+}
+
+
+
+
+
+/* --- SECTION 9 BASE --- */
+.section9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0; /* Espaciado superior e inferior */
+  background: var(--Color-Palette-Basic-White, #FFF);
+}
+
+.botones-seccion9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px; /* Espacio entre botones (pantallas grandes) */
+}
+
+.botones-seccion9 img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* ---  --- */
+@media screen and (max-width: 767px) {
+  .section9 {
+    padding: 24px 0; 
+  }
+
+  .botones-seccion9 {
+    flex-direction: column;
+    align-items: center; 
+    gap: 16px; 
+  }
+
+  .botones-seccion9 img {
+    width: 80%; 
+    height: auto;
+    max-width: 300px; 
+  }
+}
+
+
+
+/* FOOTER */
+@media screen and (max-width: 767px) {
+  footer {
+    width: 100%;
+    padding: 0;
+  }
+
+
+  .encabezado-footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+    text-align: center;
+  }
+
+  .encabezado-footer img {
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .lista-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .lista-footer li {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  /* ---------- Cuerpo Footer ---------- */
+  .cuepo-footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 20px;
+    gap: 24px;
+  }
+
+  /* Imagen (logo) arriba */
+  .info-footer img {
+    width: 140px;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  /* Texto e información */
+  .info-footer p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  /* Redes sociales */
+  .redes-footer {
+    justify-content: center;
+    margin-top: 8px;
+    gap: 16px;
+  }
+
+  .redes-footer img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* ---------- Listas de servicios ---------- */
+  .servicios-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .servicios-footer ul {
+    text-align: center;
+  }
+
+  .servicios-footer li {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  /* ---------- Final Footer ---------- */
+  .final-footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0 40px 0;
+  }
+
+  .final-footer ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .final-footer li {
+    font-size: 12px;
+    text-align: center;
+  }
 }
