@@ -2591,12 +2591,17 @@ footer {
     margin: 0; 
   }
    .tarjeta-monei {
-  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  margin-top: 30vh;
   position: relative;
   }
-
-  .frame-monei-section {
-  margin-top: 10vh;
+  
+  .frame-monei-section
+  {
+  display: flex;
+  align-items: center;
+  margin-top: 30vh;
   position: relative;
   }
 }
