@@ -2444,6 +2444,9 @@ footer {
 
 
 
+
+
+
 /* SECTION 7 */
 @media screen and (max-width: 767px) {
   .section7 {
@@ -2587,9 +2590,113 @@ footer {
     line-height: 150%;
     margin: 0; 
   }
+   .tarjeta-monei {
+  margin-top: 5vh;
+  position: relative;
+  }
+
+  .frame-monei-section {
+  margin-top: 10vh;
+  position: relative;
+  }
 }
 
 
+@media screen and (max-width: 1366px) and (min-width: 1200px) {
+
+  .section6-tu{
+    position: relative;
+    top: 450px;
+  }
+  .nosotros-content img{
+    width: 800px;
+  }
+  .nosotros-section3 {
+    position: relative;
+    margin-top: 20vh;
+  }
+
+  .tarjeta-monei {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50vh;
+  position: relative;
+}
+
+
+
+  .nosotros-tarjeta {
+    position: relative;
+    margin-top: 20vh;
+    margin-bottom: 20%;
+  }
+
+  .tarjeta-imagen{
+    overflow: visible;
+  }
+
+   .nosotros-tarjeta,
+   .nosotros-section3{
+    margin-top: 35%;
+   
+   }
+
+  .monei-tarjeta {
+    position: relative;
+    margin-top: 30vh;
+  }
+  
+  .section-logo {
+    position: relative;
+    padding-top: 70%;
+  }
+
+  .section-productos {
+    position: relative;
+    margin-top: 20vh;
+  }
+  
+  .logo-tu {
+
+    height: auto !important;
+    margin-bottom: 10px !important;
+    position: relative !important;
+    top: 5% !important;
+  }
+  
+
+  .vector {
+    position: relative; 
+    margin: 0 auto 40px auto;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+  }
+
+  .vector img.vector-original {
+    height: auto !important;
+    margin-right: 16px !important; 
+  }
+
+
+  .vector img.vector1 {
+    height: auto !important;
+    position: relative !important; 
+    z-index: 1;
+  }
+
+  /* Vector2 (el acento o punto encima) */
+  .vector img.vector2 {
+    height: auto;
+    position: absolute !important; 
+    top: -5% !important; 
+    left: 80% !important; 
+    z-index: 2; 
+  }
+
+  
+}
 
 
 
@@ -2911,7 +3018,7 @@ footer {
     right: 0;
     background: rgba(255, 255, 255, 0.98);
     width: 80%; 
-    height: 100vh; 
+    height: auto; 
     text-align: center;
     padding: 40px 0;
     transition: all 0.3s ease;
