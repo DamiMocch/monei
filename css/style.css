@@ -3181,6 +3181,7 @@ footer {
 }
 
 @media screen and (min-width: 1300px) {
+
     .section-productos {
     position: relative;
     top: -300px; 
@@ -3192,7 +3193,50 @@ padding: 60px 80px 10px 80px;
     z-index: 10;
   }
 
- 
+  .section6{
+    position: relative;
+    top: -400px;
+  }
+
+  .section6-contenido{
+    position: relative;
+    top: 15px !important;
+  }
+
+  .monei-tarjeta{
+    position: relative;
+    top: -370px;
+  }
+
+  .frame-monei-section{
+    position: relative;
+    top: -500px;
+  }
+
+.section7 {
+  position: relative;
+  background: url(../img/bg\ 4.png);
+  top: -470px;
+  background-size: 140%; 
+    background-position-y: 100%; 
+  z-index: 0;
+}
+
+  .section9{
+    position: relative;
+    top: -500px;
+  }
+
+  footer{
+    position: relative;
+    top: -500px;
+  }
+
+  .section8{
+    position: relative;
+    top: -470px;
+  }
+
   .section-productos-contenido {
     display: grid;
     gap: 15px;
@@ -3205,6 +3249,7 @@ padding: 60px 80px 10px 80px;
   body {
     background-size: 120%; 
     background-position-y: -5%; 
+    height: 10000px;
   }
   .nosotros-section3 {
     display: flex;
