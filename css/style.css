@@ -3174,13 +3174,12 @@ footer {
     background-position: center top;
   }
 }
-
-@media screen and (min-width: 1300px) {
+@media screen and (max-width: 1299px) {
 
     .section-productos {
     position: relative;
     top: -300px; 
-padding: 60px 80px 10px 80px;
+    padding: 60px 80px 10px 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3323,6 +3322,7 @@ padding: 60px 80px 10px 80px;
   background-position-y: -40px; 
   position: relative;
   padding: 80px 20px; 
+ 
 }
 
 
@@ -3356,6 +3356,186 @@ padding: 60px 80px 10px 80px;
   }
 }
 
+@media screen and (min-width: 1300px) and (max-width: 1350px){
+
+    .section-productos {
+    position: relative;
+    top: -300px; 
+    padding: 60px 80px 10px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+  }
+
+  .section6{
+    position: relative;
+    top: -400px;
+  }
+
+  .section6-contenido{
+    position: relative;
+    top: 15px !important;
+  }
+
+  .monei-tarjeta{
+    position: relative;
+    top: -370px;
+  }
+
+  .frame-monei-section{
+    position: relative;
+    top: -500px;
+  }
+
+.section7 {
+  position: relative;
+  background: url(../img/bg\ 4.png);
+  top: -470px;
+  background-size: 140%; 
+    background-position-y: 100%; 
+  z-index: 0;
+}
+
+  .section9{
+    position: relative;
+    top: -500px;
+  }
+
+  footer{
+    position: relative;
+    top: -500px;
+  }
+
+  .section8{
+    position: relative;
+    top: -470px;
+  }
+
+  .section-productos-contenido {
+    display: grid;
+    gap: 15px;
+    width: 100%;
+    max-width: 1400px; 
+    margin: 0 auto;
+  }
+
+  
+  body {
+    background-size: 115%; 
+    background-position-y: -5%; 
+    height: 10000px;
+  }
+  .nosotros-section3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px; 
+    padding: 80px 100px;
+    width: 100%;
+    overflow: visible !important;
+    position: relative;
+  }
+
+  .tarjeta-imagen img {
+    width: 780px;
+    height: auto;
+    transform: translateX(-40px) scale(1.05);
+  }
+
+  .nosotros-tarjeta {
+    flex: 1.5; 
+    margin-top: -100px;
+  }
+
+
+  .nosotros-content img {
+    width: 750px;
+    height: auto;
+    transform: translateX(-40px) scale(1.05);
+  }
+
+  .nosotros-content3 {
+    flex: 1.5; 
+    max-width: 890px; 
+    white-space: normal !important;
+    word-wrap: break-word !important;
+  }
+
+  .nosotros-content3 h1 {
+    font-size: 64px;
+    line-height: 110%;
+  }
+
+  .nosotros-content3 .azul {
+    font-size: 61px;
+  }
+
+  .nosotros-content3 .blanco-y,
+  .nosotros-content3 .blanco {
+    font-size: 45px;
+  }
+
+  .nosotros-content3 .verde {
+    font-size: 61px;
+  }
+
+  .nosotros-descripcion {
+    line-height: 1.6;
+    margin-top: 24px;
+    display: block;
+    width: 100%;
+
+  }
+
+  .nosotros-lista {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .boton-depositar img {
+    width: 300px;
+    height: auto;
+  }
+
+.section-logo {
+  background-size: cover; 
+  background-position-y: -40px; 
+  position: relative;
+  padding: 80px 20px; 
+}
+
+
+  
+.section-logo-img {
+  display: flex;              
+  justify-content: center;    
+  align-items: center;       
+  width: 100%;
+  position: relative;
+}
+
+.section-logo-img img {
+  width: 80%;
+  height: auto;
+  transform: translateY(-30px); 
+  display: block;
+  margin: 0 auto;             
+}
+
+
+
+  .section-logo::before {
+    content: "";
+    position: absolute;
+    top: -100px; 
+    left: 0;
+    width: 100%;
+    height: 120%;
+    z-index: -1;
+  }
+}
 
 
 
