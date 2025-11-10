@@ -763,7 +763,6 @@ section {
   gap: 40px;
   padding: 0 0 0 10%;
   position: relative;
-  overflow: hidden;
   white-space: nowrap;
 }
 
@@ -1232,7 +1231,7 @@ footer {
 .section7 {
   position: relative;
   width: 100%;
-  overflow: hidden;
+
 }
 
 .section7-fondo {
