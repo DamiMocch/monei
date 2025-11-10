@@ -374,7 +374,6 @@ section {
 }
 
 /*CONTENIDO DE SECTION 2*/
-/* Texto a la derecha */
 .nosotros-content2 {
   max-width: 600px;
   position: relative;
@@ -382,7 +381,6 @@ section {
   text-align: left;
   display: flex;
   flex-direction: column;
-  /* apila contenido y botón */
   justify-content: center;
 }
 
@@ -624,7 +622,6 @@ section {
 
 /* SECTION 3 */
 .nosotros-section3 {
-  /* min-height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -633,7 +630,6 @@ section {
   padding-right: 12.5%;
   padding-left: 0;
   position: relative;
-  overflow: hidden;
 }
 
 
