@@ -3215,16 +3215,16 @@ footer {
 
   .section7-img img.img-chat {
     position: absolute;
-    top: -50px;      /* sube la imagen hacia arriba */
-    left: 30% !important;     /* mantiene la imagen un poco a la izquierda */
-    z-index: 0;      /* detrás del contenido */
+    top: -50px;    
+    left: 30% !important;     
+    z-index: 0;     
     width: auto;
     height: auto;
   }
 
   .section7-contenido {
     position: relative;
-    z-index: 2;      /* encima de la imagen */
+    z-index: 2;      
     margin-top: -40px; 
   }
 
@@ -3589,7 +3589,7 @@ footer {
   top: -80px !important;          
   left: 0;
   width: 100%;
-  height: 110% !important;         
+  height: 115% !important;         
   background-size: cover !important;
   background-position: center top !important;
   background-repeat: no-repeat !important;
