@@ -2271,25 +2271,41 @@ footer {
 
 /* SECTION PRODUCTOS */
 @media screen and (max-width: 767px) {
-  .section-productos {
+.section-productos {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px 16px 80px 16px; 
+    padding: 40px 16px 80px 16px;
+    position: relative;
+    top: -100px; /* súbela más visiblemente */
+    z-index: 2000; /* la trae al frente */
+  }
+
+  .section-productos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+
+  .section-productos-contenido {
+    position: relative;
+    z-index: 3000; /* garantiza que esté por encima */
+    margin-top: 0;
   }
 
   .section-productos-img {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    gap: 74px; 
+    flex-direction: column;
+    align-items: center;
+    gap: 74px;
     width: 100%;
   }
 
   .section-productos-img img {
-    width: 100%; 
-    max-width: 350px; 
+    width: 100%;
+    max-width: 350px;
     height: auto;
     border-radius: 16px;
   }
@@ -2646,6 +2662,7 @@ footer {
     position: relative;
     margin-top: 20vh;
   }
+
   
   .logo-tu {
 
@@ -3061,7 +3078,6 @@ footer {
 
 
 
-/* ELIMINAR BORDES LATERALES EN MÓVILES  */
 @media screen and (max-width: 767px) {
   html, body {
     margin: 0 !important;
@@ -3360,6 +3376,8 @@ footer {
   display: block !important; 
   margin: 0 auto !important;         
 }
+
+
 
 
   .nosotros-tarjeta{
@@ -3669,7 +3687,6 @@ footer {
 @media screen and (min-width: 1367px) and (max-width: 1919px) {
   .section-logo {
     position: relative !important;
-
     margin-top: 40%;
   }
 
